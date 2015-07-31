@@ -10,9 +10,11 @@ include 'single-32.php';
 */
 
 get_header();
+dynamic_sidebar('right-sidebar');
+get_sidebar();
 ?>
 
-<div class="content" id="content" role="main">
+<div class="blog-content" id="content" role="main">
 	<div class="padded-content">
 
 

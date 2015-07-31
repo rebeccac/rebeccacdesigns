@@ -106,7 +106,8 @@ h2.info-text {
   h2.info-text a:link.red, h2.info-text a:hover.red, h2.info-text a:active.red, h2.info-text a:visited.red {
     color: #111a1b; }
 
-h2.front-page-subtitle {
+h2.front-page-subtitle,
+h4.sidebar-title /*  blog sidebar */ {
   font-family: 'Lora', serif;
   font-weight: 400;
   color: #555;
@@ -193,6 +194,7 @@ img.text-wrap-right {
     width: 80%;
     max-width: 80%;
     float: left;
+    border-right: 1px solid #d2d2d2;
 }
 
 .footer {
@@ -931,6 +933,23 @@ hr.blog-post-divider {
     height: 100%;
     min-height: 100%;
 }
+
+    /* ********** Twitter Widget ********** */
+    .wptt_TwitterTweets {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .fetched_tweets .tweets_avatar {
+        border-radius: 0;
+    }
+    .fetched_tweets .tweets_avatar .tweet_wrap .tweet_data {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        color: #666;
+        line-height: 1em;
+    }
+
+        /* ********** End of Twitter Widget ********** */
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {

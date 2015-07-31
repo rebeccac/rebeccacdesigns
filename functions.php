@@ -1,11 +1,4 @@
 <?php
-if ( function_exists('register_sidebar') )
-register_sidebar(array(
-'before_widget' => '',
-'after_widget' => '',
-'before_title' => '<h4>',
-'after_title' => '</h4>',
-));
 if(function_exists('register_sidebar'))
 register_sidebar( $args );
 $args = array(
@@ -13,10 +6,17 @@ $args = array(
 	'id'            => 'right-sidebar',
 	'description'   => 'right',
     'class'         => 'widget-class',
-	'before_widget' => '<li id="%1$s" class="widget %2$s">',
-	'after_widget'  => '</li>\n',
-	'before_title'  => '<h4>',
-	'after_title'   => '</h4>' );
+    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div></li>',
+    'before_title' => '<h4 class="widgettitle">',
+    'after_title'  => '</h4><div class="widgetcontent">' );
+if ( function_exists('register_sidebar') )
+register_sidebar(array(
+    'before_widget' => '<li id="%1$s" class="widget %2$s">',
+    'after_widget' => '</li>',
+    'before_title' => '<h4 class="sidebar-title">',
+    'after_title' => '</h4>',
+));
 // get all records from images table - front page images
 function frontPageImages_function() {
     global $wpdb;
