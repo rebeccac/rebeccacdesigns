@@ -107,12 +107,19 @@ h2.info-text {
     color: #111a1b; }
 
 h2.front-page-subtitle,
-h4.sidebar-title /*  blog sidebar */ {
+h4.sidebar-title, /*  blog sidebar */
+.screen-reader-text {
   font-family: 'Lora', serif;
   font-weight: 400;
   color: #555;
-  display: inline-block;
   font-size: 1.25em; }
+h2.front-page-subtitle,
+h4.sidebar-title {
+    display: inline-block;
+}
+label.screen-reader-text {
+    display: block;
+}
 
 .red {
   color: #ff0000; }
@@ -575,20 +582,20 @@ header.header {
 .number-dotpoints {
   list-style: decimal; }
 
-form {
+form.wpcf7 { /* wordpress contact form class */
   width: 90%;
   margin: 0 auto;
   padding: 10px 0 50px 0; }
-  form label {
+  form.wpcf7 label {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
-    font-weight: 600 !important;
+    font-weight: 600;
     color: #4b747a; }
-  form input[type="text"],
-  form input[type="email"],
-  form textarea.form-control {
+  form.wpcf7 input[type="text"],
+  form.wpcf7 input[type="email"],
+  form.wpcf7 textarea.form-control {
     background-color: #fff !important; }
-  form input[type="submit"] {
+  form.wpcf7 input[type="submit"] {
     display: block;
     width: 150px;
     height: 35px;
@@ -966,8 +973,29 @@ hr.blog-post-divider {
         font-size: 0.9em;
     }
 
-        /* ********** End of Twitter Widget ********** */
+    /* ********** End of Twitter Widget ********** */
 
+    /* ********** Search Widget ********** */
+    .widget_search {
+        margin-bottom: 20px;
+    }
+    .search-widget-input {
+        height: 30px;
+        padding: 5px;
+        display: inline;
+    }
+    .search-widget-button {
+        height: 30px;
+        padding: 5px;
+        width: 30px;
+        background-color: #777;
+        color: #fdfdfd;
+        line-height: 5px;
+        text-align: center;
+        display: inline;
+    }
+
+    /* ********** End of Search Widget ********** */
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
     .footer, .push {
