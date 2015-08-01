@@ -141,10 +141,17 @@
 					<li class="menu-item" role="menuitem"><a href="/blog">BLOG</a></li>
                     <!-- <li class="menu-item" role="menuitem">SHOP</li> -->
 
-                    <li class="title">
+                    <!-- <li class="title">
                         <h1 class="title"><span style="font-size: 1.5em;">REBECCA CORDINGLEY</span><br>
                             <span style="font-size: 1.1em;">DESIGNS</span></h1>
-                    </li>
+                    </li> -->
+
+					<li class="title">
+						<h1 class="title">
+							<span class="title-top-bottom" style="background-color: #fdfdfd; color: #777;">REBECCA CORDINGLEY</span>
+							<span class="title-top-bottom" style="background-color: #777; color: #fdfdfd;">DESIGNS</span>
+						</h1>
+					</li>
 
                     <li class="menu-item" role="menuitem"><a <?php echo $active_gallery ?> href="/gallery">GALLERY</a></li>
                     <li class="menu-item" role="menuitem"><a <?php echo $active_contact ?> href="/contact">CONTACT</a></li>

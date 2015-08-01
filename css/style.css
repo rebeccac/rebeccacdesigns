@@ -81,7 +81,7 @@ h2.page-title a:visited {
     font-family: 'Lora', serif;
     font-weight: 200;
     color: #666;
-    background-color: #f2f2eb;
+    background-color: #9fb4b7;
 }
 h2.page-title {
     font-size: 1.5em;
@@ -166,7 +166,8 @@ img.text-wrap-right {
   height: 100%;
   margin: 0 auto -35px auto;
   width: 100%;
-  padding: 0; }
+  padding: 0;
+  background-color: #fdfdfd; /* changes colour of blog's sidebar */ }
 
 .container {
   width: 100%;
@@ -178,13 +179,15 @@ img.text-wrap-right {
 .content,
 .blog-content {
   padding: 100px 0 0 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #fdfdfd; }
 
 .padded-content,
 .blog-padded-content {
     width: 95%;
     max-width: 95%;
     margin: 0 auto;
+    background-color: #fdfdfd;
 }
 .content {
     width: 100%;
@@ -194,12 +197,12 @@ img.text-wrap-right {
     width: 80%;
     max-width: 80%;
     float: left;
-    border-right: 1px solid #d2d2d2;
+    /*border-right: 1px solid #d2d2d2;*/
 }
 
 .footer {
     background-color: #fdfdfd;
-    margin-top: 60px;
+    margin-top: 0;
     position: relative;
 }
 hr.footer {
@@ -504,17 +507,25 @@ header.header {
         padding: 0 15px;
         display: inline-block; }
         header.header nav.nav ul.menu li.menu-item a:link, header.header nav.nav ul.menu li.menu-item a:hover, header.header nav.nav ul.menu li.menu-item a:active, header.header nav.nav ul.menu li.menu-item a:visited {
-          color: #333333;
+          color: #777777;
           text-decoration: none; }
         header.header nav.nav ul.menu li.menu-item a:link.active, header.header nav.nav ul.menu li.menu-item a:hover.active, header.header nav.nav ul.menu li.menu-item a:active.active, header.header nav.nav ul.menu li.menu-item a:visited.active {
           text-decoration: underline; }
       header.header nav.nav ul.menu li.title {
-        display: inline-block; }
+        display: inline-block;
+        width: 250px; }
         header.header nav.nav ul.menu li.title h1.title {
           font-family: 'Lora', serif;
           font-weight: 400;
-          color: #777;
           display: inline-block;
+          text-align: center;
+          width=100%;
+        }
+        header.header nav.nav ul.menu li.title h1.title .title-top-bottom {
+            font-size: 1.2em;
+            display: block;
+            height: 25px;
+            line-height: 25px;
         }
   header.header .logo {
     position: absolute;
@@ -930,23 +941,29 @@ hr.blog-post-divider {
 .sidebar-container {
     float: right;
     width: 20%;
-    height: 100%;
     min-height: 100%;
+}
+.sidebar-img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
     /* ********** Twitter Widget ********** */
-    .wptt_TwitterTweets {
-        width: 90%;
-        margin: 0 auto;
+
+    .tweets-list-container {
+        padding: 10px 5px;
+        border: 1px solid #d2d2d2;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px #ccc;
     }
-    .fetched_tweets .tweets_avatar {
-        border-radius: 0;
+    .tweet-list li {
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 5px !important;
+        padding-top: 5px;
     }
-    .fetched_tweets .tweets_avatar .tweet_wrap .tweet_data {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1em;
-        color: #666;
-        line-height: 1em;
+    p[class^="tweet_link_"] {
+        font-size: 0.9em;
     }
 
         /* ********** End of Twitter Widget ********** */

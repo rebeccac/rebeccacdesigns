@@ -13,6 +13,7 @@
 if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
 	<div id="tertiary" class="sidebar-container" role="complementary">
 		<div class="sidebar-inner">
+			<img src="/wp-content/uploads/2015/07/logo_99.png" alt="Rebecca Cordingley Designs logo" width="99px" class="sidebar-img">
 			<div class="widget-area">
 				<?php dynamic_sidebar( 'sidebar-2' ); ?>
 			</div><!-- .widget-area -->

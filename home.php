@@ -5,6 +5,7 @@
 <!-- End Header -->
 <?php dynamic_sidebar('right-sidebar'); ?>
 <?php get_sidebar(); ?>
+
 <div class="blog-content">
     <div class="padded-content">
 <!-- main content area -->
@@ -12,6 +13,7 @@
 <a name="maincontent" id="maincontent"></a>
 <!-- WordPress Loop -->
 <div class="blogpostwrapper">
+
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 <div class="blogpost">
@@ -19,7 +21,7 @@
 <h3><?php the_author(); ?></h3>
 <?php the_content(); ?>
 </div>
-<hr class="blog-post-divider">
+
 <?php endwhile; ?>
 <?php else : ?>
 <h6 class="center">Not Found</h6>
