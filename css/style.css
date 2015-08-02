@@ -533,6 +533,7 @@ header.header {
             display: block;
             height: 25px;
             line-height: 25px;
+            padding: 0 10px;
         }
   header.header .logo {
     position: absolute;
@@ -980,19 +981,24 @@ hr.blog-post-divider {
         margin-bottom: 20px;
     }
     .search-widget-input {
-        height: 30px;
-        padding: 5px;
+        width: 75% !important;
         display: inline;
+        height: 30px;
+        line-height: 30px;
     }
     .search-widget-button {
+        width: 30px !important;
         height: 30px;
-        padding: 5px;
-        width: 30px;
+        line-height: 30px;
+        padding: 0;
+        text-align: center;
         background-color: #777;
         color: #fdfdfd;
-        line-height: 5px;
-        text-align: center;
         display: inline;
+    }
+    .search-widget-button:hover {
+        background-color: #777;
+        color: #fdfdfd;
     }
 
     /* ********** End of Search Widget ********** */
