@@ -67,11 +67,10 @@ p.signature {
 
 h3 {
   font-family: 'Lora', serif;
+  color: #333;
 }
-
-
-h3 {
-    color: #333;
+h3.blog-title {
+    display: inline-block;
 }
 h2.page-title,
 h2.page-title a:link,
@@ -178,7 +177,7 @@ img.text-wrap-right {
 
 .container {
   width: 100%;
-  max-width: 100%;
+  max-width: 1140px;
   position: relative;
   top: 0;
   padding: 0; }
@@ -201,8 +200,8 @@ img.text-wrap-right {
     max-width: 100%;
 }
 .blog-content {
-    width: 80%;
-    max-width: 80%;
+    width: 75%;
+    max-width: 75%;
     float: left;
     /*border-right: 1px solid #d2d2d2;*/
 }
@@ -939,16 +938,71 @@ hr.blog-post-divider {
     height: 1px;
     background: #777;}
 
+.blogpost {
+    background-color: #fff;
+    border-bottom: 1px solid #d2d2d2;
+    border-left: 1px solid #d2d2d2;
+    border-right: 1px solid #d2d2d2;
+    box-shadow: 2px 2px 2px #ddd;
+    margin: 30px 20px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+h2.post-title {
+    text-align: center;
+}
+h2.post-title a:link,
+h2.post-title a:hover,
+h2.post-title a:active,
+h2.post-title a:visited {
+    font-family: 'Lora', serif;
+    font-size: 1.1em;
+    color: #666;
+    font-weight: 300;
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+}
+h3.post-author {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #555;
+    display: inline-block;
+    padding-left: 5px;
+}
+
 .blogpost p {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     color: #666;
     text-align: justify;
 }
+.detail {
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    left: -15px;
+    right:-15px;
+    height: 30px;
+    width: auto;
+    /*background-color: #e2e2e2;*/
+    padding: 0 15px;
+    line-height: 30px;
+}
+.interact {
+
+}
+p.post-details {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    color: #333;
+}
 
 .sidebar-container {
     float: right;
-    width: 20%;
+    width: 25%;
     min-height: 100%;
 }
 .sidebar-img {

@@ -9,8 +9,9 @@ include 'single-32.php';
 * @subpackage Default_Theme
 */
 
-get_header();
-dynamic_sidebar('right-sidebar');
+get_header();?>
+<div class="container">
+<?php dynamic_sidebar('right-sidebar');
 get_sidebar();
 ?>
 
@@ -30,7 +31,7 @@ get_sidebar();
 
 <div>
 <?php the_content('<p>Read the rest of this entry &raquo;</p>'); ?>
-
+<?php echo do_shortcode('[ssba]'); ?>
 <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 <?php the_tags( '<p>Tags: ', ', ', '</p>'); ?>
 
@@ -81,6 +82,6 @@ Both comments and pings are currently closed.
 <?php endif; ?>
 
 </div></div>
-
+</div><!-- container -->
 <?php get_footer(); ?>
 <?php } ?>
