@@ -25,6 +25,7 @@ get_header(); ?>
 		<!-- main content area -->
 		<div id="mainhome">
 		<a name="maincontent" id="maincontent"></a>
+		<h2 class="page-title"><?php printf( __( 'Tag Archives: %s', 'twentythirteen' ), single_tag_title( '', false ) ); ?></h2>
 		<!-- WordPress Loop -->
 		<div class="blogpostwrapper">
 			<?php $counter = 0;
@@ -57,7 +58,8 @@ get_header(); ?>
 			?>
 			<div class="blogpost" style="border-top: 7px solid <?php echo $post_border; ?>;">
 			<div class="detail" style="background-color: <?php echo $post_detail; ?>;"><p class="post-details"><?php the_date(); ?> | <?php the_author(); ?></p></div>
-			<h2 class="post-title" id="post-<?php the_ID(); ?>"> <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+			<h2 class="blog-post-title" id="post-<?php the_ID(); ?>"> <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+			<p><span class="bold">Category:</span> <?php the_category(' &gt; ', 'multiple'); ?></p>
 			<?php the_content('<div class="more-link-box">Read more</div>'); ?>
 
 			<div class="interact">
@@ -71,7 +73,7 @@ get_header(); ?>
 			    </div>
 			</div><!-- /interact -->
 			<div class="post-tags">
-			    <?php the_tags('Tags: ', ' | '); ?>
+			    <p><?php the_tags('<span class="bold">Tags:</span> ', ' | '); ?></p>
 			</div>
 			</div>
 			<?php
@@ -83,8 +85,8 @@ get_header(); ?>
 			<p class="center">Sorry, but you are looking for something that isn't here.</p>
 			<?php include (TEMPLATEPATH . "/searchform.php"); ?>
 			<?php endif; ?>
-	</div>
-	<!-- End WordPress Loop -->
+			</div>
+			<!-- End WordPress Loop -->
 	</div>
 	<!-- end main content area -->
 	</div>

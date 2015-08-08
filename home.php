@@ -12,6 +12,7 @@
 <div id="mainhome">
 <a name="maincontent" id="maincontent"></a>
 <!-- WordPress Loop -->
+<h2 class="page-title">LATEST POSTS</h2>
 <div class="blogpostwrapper">
 <?php $counter = 0;
 if (have_posts()) :
@@ -43,7 +44,8 @@ if (have_posts()) :
 ?>
 <div class="blogpost" style="border-top: 7px solid <?php echo $post_border; ?>;">
 <div class="detail" style="background-color: <?php echo $post_detail; ?>;"><p class="post-details"><?php the_date(); ?> | <?php the_author(); ?></p></div>
-<h2 class="post-title" id="post-<?php the_ID(); ?>"> <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+<h2 class="blog-post-title" id="post-<?php the_ID(); ?>"> <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+<p><span class="bold">Category:</span> <?php the_category(' &gt; ', 'multiple'); ?></p>
 <?php the_content('<div class="more-link-box">Read more</div>'); ?>
 
 <div class="interact">
@@ -57,7 +59,7 @@ if (have_posts()) :
     </div>
 </div><!-- /interact -->
 <div class="post-tags">
-    <?php the_tags('Tags: ', ' | '); ?>
+    <p><?php the_tags('<span class="bold">Tags:</span> ', ' | '); ?></p>
 </div>
 </div>
 <?php
