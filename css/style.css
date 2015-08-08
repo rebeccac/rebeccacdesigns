@@ -184,7 +184,7 @@ img.text-wrap-right {
 
 .content,
 .blog-content {
-  padding: 100px 0 0 0;
+  padding: 100px 0 100px 0;
   margin: 0 auto;
   background-color: #fdfdfd; }
 
@@ -948,16 +948,12 @@ hr.blog-post-divider {
     padding: 15px;
     box-sizing: border-box;
 }
-
-h2.post-title {
-    text-align: center;
-}
 h2.post-title a:link,
 h2.post-title a:hover,
 h2.post-title a:active,
 h2.post-title a:visited {
     font-family: 'Lora', serif;
-    font-size: 1.1em;
+    font-size: 1em;
     color: #666;
     font-weight: 300;
     text-decoration: none;
@@ -979,6 +975,18 @@ h3.post-author {
     color: #666;
     text-align: justify;
 }
+.more-link-box {
+    width: 20%;
+    max-width: 150px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    text-align: center;
+}
+a.more-link {
+    color: #333;
+}
 .detail {
     display: inline-block;
     position: relative;
@@ -987,12 +995,20 @@ h3.post-author {
     right:-15px;
     height: 30px;
     width: auto;
-    /*background-color: #e2e2e2;*/
     padding: 0 15px;
     line-height: 30px;
 }
 .interact {
-
+    color: #666;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.interact i {
+    font-size: 1.8em;
+    color: #666;
+    padding: 0 10px;
 }
 p.post-details {
     font-family: 'Open Sans', sans-serif;

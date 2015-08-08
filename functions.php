@@ -47,4 +47,10 @@ function truncate_paragraph($text, $length, $url, $class) {
         $url = "<a href='".$url."' class='".$class."'>(more...)</a>";
         return "$text $url";
     }
+// // Replaces the excerpt "more" text by a link
+// function new_excerpt_more($more) {
+//     global $post;
+// 	return '<a class="more-link" href="'. get_permalink($post->ID) . '"> Read more...</a>';
+// }
+// add_filter('excerpt_more', 'new_excerpt_more');
 ?>
