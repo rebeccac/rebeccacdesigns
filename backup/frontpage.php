@@ -40,15 +40,7 @@ echo "</div>";
 <div class="frontpage-gallery hidden-xs">
 <div class="frontpage-hidden-xs-images">
   <div class="col-sm-12">
-      <div class="row row-no-padding">
-          [insert_php]
-for($i = 0; $i < 3; $i++) {
-echo "<div class='col-sm-4'>";
-echo "<img src='".$images[$i]->url."' alt='".$images[$i]->alt."' width='100%' class='frontpage-image'>";
-echo "</div>";
-}[/insert_php]
-
-      </div>
+     <img src="/wp-content/uploads/2015/08/banner1.png" class="img-full-width" alt="Rebecca Cordingley Designs banner" title="Photo by Simon Cordingley">
   </div>
 </div>
 </div>
@@ -91,14 +83,46 @@ echo "</div>";
       </div>
   </div>
 
+<!-- middle column -->
+<div class="middle col-xs-12 col-sm-4">
+[insert_php]
+$counter = 0;
 
-  <!-- middle column -->
+$args = array(
+    'posts_per_page' => 2,
+    'order' => 'DESC'
+);
+$rp = new WP_Query( $args );
 
-  <div class="middle col-xs-12 col-sm-4">
-      <div class="card">
-          <h2 class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
-      </div>
-  </div>
+if($rp->have_posts()) :
+    while($rp->have_posts()) : $rp->the_post();
+       echo '<div class="card">';
+       echo '<h2 class="front-page-subtitle">';
+       the_title();
+       echo '</h2>';
+echo "<br>";
+       the_date();
+
+
+       if($counter == 0) {
+            echo "<hr class='front-page-blog-colour' style='background: rgba(255, 166, 68, 1);'>";
+       }
+       else if($counter == 1) {
+            echo "<hr class='front-page-blog-colour' style='background: rgba(0, 45, 64, 1);'>";
+       }
+
+       the_excerpt(); // displays the excerpt
+       echo '</div>'; // card
+       $counter++;
+    endwhile;
+    wp_reset_postdata(); // always always remember to reset postdata when using a custom query, very important
+endif;
+[/insert_php]
+
+
+</div> <!-- middle -->
+
+
 
 
 <!-- right column -->

@@ -50,10 +50,10 @@ if (have_posts()) :
 
 <div class="interact">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-6">
             <i class="fa fa-comments-o"></i>Comment on this post
         </div>
-        <div class="col-sm-6">
+        <div class="col-xs-12 col-sm-6">
             <?php echo do_shortcode('[ssba]'); ?>
         </div>
     </div>

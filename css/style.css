@@ -48,6 +48,10 @@ html, body {
 .bold {
     font-weight: 600;
 }
+img.img-full-width {
+    width: 100%;
+    height: auto;
+}
 a:link.no-decoration-link,
 a:hover.no-decoration-link,
 a:active.no-decoration-link,
@@ -69,7 +73,8 @@ p.signature {
   margin-top: 20px; }
 
 h3 {
-  font-family: 'Lora', serif;
+  /*font-family: 'Lora', serif;*/
+  font-family: 'Open Sans', sans-serif;
   color: #333;
 }
 h3.blog-title {
@@ -80,11 +85,11 @@ h2.page-title a:link,
 h2.page-title a:hover,
 h2.page-title a:active,
 h2.page-title a:visited {
-    font-family: 'Lora', serif;
+    /*font-family: 'Lora', serif;*/
+    font-family: 'Open Sans', sans-serif;
     font-weight: 200;
     color: #666;
     /*background-color: #9fb4b7;*/
-    /*background-color: #e2e2e2;*/
 }
 h2.page-title {
     font-size: 1.5em;
@@ -112,13 +117,15 @@ h2.info-text {
 h2.front-page-subtitle,
 h4.sidebar-title, /*  blog sidebar */
 .screen-reader-text {
-  font-family: 'Lora', serif;
+  /*font-family: 'Lora', serif;*/
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   color: #555;
-  font-size: 1.25em; }
+  font-size: 1.15em; }
 h2.front-page-subtitle,
 h4.sidebar-title {
     display: inline-block;
+    text-transform: uppercase;
 }
 label.screen-reader-text {
     display: block;
@@ -174,7 +181,7 @@ img.text-wrap-right {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -35px auto;
+  margin: 0 auto 20px auto;
   width: 100%;
   padding: 0;
   background-color: #fdfdfd; /* changes colour of blog's sidebar */ }
@@ -510,7 +517,8 @@ header.header {
       margin: 0; }
       header.header nav.nav ul.menu li.menu-item {
         line-height: 40px;
-        font-family: 'Martel', serif;
+        /*font-family: 'Martel', serif;*/
+        font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 1em;
         padding: 0 15px;
@@ -524,14 +532,16 @@ header.header {
         display: inline-block;
         width: 250px; }
         header.header nav.nav ul.menu li.title h1.title {
-          font-family: 'Lora', serif;
+          /*font-family: 'Lora', serif;*/
+          font-family: 'Open Sans', sans-serif;
           font-weight: 400;
           display: inline-block;
           text-align: center;
           width=100%;
         }
         header.header nav.nav ul.menu li.title h1.title .title-top-bottom {
-            font-size: 1.2em;
+            /*font-size: 1.2em;*/
+            font-size: 1.3em;
             display: block;
             height: 25px;
             line-height: 25px;
@@ -570,6 +580,12 @@ header.header {
 .middle {
   }
 
+.front-page-blog-colour {
+    width: 90%;
+    margin: 5px auto;
+    border: 0;
+    height: 4px;
+}
 /* ******************************* */
 /* ********** Contact Page ********** */
 .box {
@@ -908,7 +924,8 @@ li.edit-image {
     padding-left: 20px;
     display: inline-block; }
     .card .widget-bottom-row .widget-bottom-row-left h3.widget-view-more {
-      font-family: 'Lora', serif;
+      /*font-family: 'Lora', serif;*/
+      font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       color: #555;
       display: inline-block;
@@ -920,7 +937,8 @@ li.edit-image {
     text-align: right;
     padding-right: 20px; }
     .card .widget-bottom-row .widget-bottom-row-right h3.widget-price {
-      font-family: 'Lora', serif;
+      /*font-family: 'Lora', serif;*/
+      font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       color: #555;
       display: inline-block;
@@ -946,19 +964,19 @@ hr.blog-post-divider {
     border-bottom: 1px solid #d2d2d2;
     border-left: 1px solid #d2d2d2;
     border-right: 1px solid #d2d2d2;
-    box-shadow: 2px 2px 2px #ddd;
     margin: 30px 20px;
     padding: 15px;
     box-sizing: border-box;
 }
 h2.blog-post-title {
     font-size: 1.4em;
+    text-align: center;
 }
 h2.blog-post-title a:link,
 h2.blog-post-title a:hover,
 h2.blog-post-title a:active,
 h2.blog-post-title a:visited {
-    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: inherit;
     text-transform: uppercase;
     color: #666;
@@ -987,8 +1005,8 @@ p.plain-text {
     text-align: justify;
 }
 .more-link-box {
-    width: 20%;
-    max-width: 150px;
+    width: 30%;
+    max-width: 180px;
     height: 45px;
     line-height: 45px;
     border: 2px solid #ccc;
@@ -1171,6 +1189,18 @@ p.post-details {
 
 /*# sourceMappingURL=mediaqueries.css.map */
 
+@media only screen and (max-width: 768px) {
+    .blog-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .sidebar-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
 
 
 

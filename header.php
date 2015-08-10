@@ -149,7 +149,7 @@
 					<li class="title">
 						<h1 class="title">
 							<span class="title-top-bottom" style="background-color: #fdfdfd; color: #777;">REBECCA CORDINGLEY</span>
-							<span class="title-top-bottom" style="background-color: #777; color: #fdfdfd;">DESIGNS</span>
+							<span class="title-top-bottom" style="background-color: #fdfdfd; color: #777;">DESIGNS</span>
 						</h1>
 					</li>
 
