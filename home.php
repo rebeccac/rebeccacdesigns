@@ -11,6 +11,11 @@
 <!-- main content area -->
 <div id="mainhome">
 <a name="maincontent" id="maincontent"></a>
+<div class="row">
+    <div class="col-sm-12">
+        <img src="/wp-content/uploads/2015/08/banner_whitebg.jpg" class="img-full-width" alt="Rebecca Cordingley Designs banner" title="Photo by Simon Cordingley">
+    </div><!-- col-sm-12 -->
+</div><!-- row -->
 <!-- WordPress Loop -->
 <h2 class="page-title">LATEST POSTS</h2>
 <div class="blogpostwrapper">
@@ -19,26 +24,29 @@ if (have_posts()) :
     while (have_posts()) : the_post();
     switch($counter) {
         case 0:
-        case 4:
-        case 8:
-            $post_border = "rgba(153, 138, 47, 1)";
-            $post_detail = "rgba(153, 138, 47, 0.6)";
+        case 5:
+            $post_border = "rgba(51, 77, 92, 1)";
+            $post_detail = "rgba(51, 77, 92, 0.6)";
             break;
         case 1:
-        case 5:
-        case 9:
-            $post_border = "rgba(255, 166, 68, 1)";
-            $post_detail = "rgba(255, 166, 68, 0.7)";
+        case 6:
+            $post_border = "rgba(69, 178, 157, 1)";
+            $post_detail = "rgba(69, 178, 157, 0.6)";
             break;
         case 2:
-        case 6:
-            $post_border = "rgba(44, 89, 79, 1)";
-            $post_detail = "rgba(44, 89, 79, 0.7)";
+        case 7:
+            $post_border = "rgba(239, 201, 76, 1)";
+            $post_detail = "rgba(239, 201, 76, 0.6)";
             break;
         case 3:
-        case 7:
-            $post_border = "rgba(0, 45, 64, 1)";
-            $post_detail = "rgba(0, 45, 64, 0.6)";
+        case 8:
+            $post_border = "rgba(226, 122, 63, 1)";
+            $post_detail = "rgba(226, 122, 63, 0.6)";
+            break;
+        case 4:
+        case 9:
+            $post_border = "rgba(223, 90, 73, 1)";
+            $post_detail = "rgba(223, 90, 73, 0.6)";
             break;
     }
 ?>
