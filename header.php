@@ -34,6 +34,9 @@
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,600|Halant:300,400|Martel:400,300|Lora:400,600,700|Marcellus|Open+Sans:300,400,600,800|Merriweather' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="/wp-content/themes/twentythirteen-child/js/menu_jquery.js"></script>
+
 
 
 		<!--[if lt IE 9]>

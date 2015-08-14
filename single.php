@@ -8,20 +8,19 @@ include 'single-32.php';
 * @package WordPress
 * @subpackage Default_Theme
 */
-$border_colours = array("rgba(51, 77, 92, 1", "rgba(69, 178, 157, 1", "rgba(239, 201, 76, 1", "rgba(226, 122, 63, 1", "rgba(223, 90, 73, 1");
+$border_colours = array("rgba(51, 77, 92, 1)", "rgba(69, 178, 157, 1)", "rgba(239, 201, 76, 1)", "rgba(226, 122, 63, 1)", "rgba(223, 90, 73, 1)");
 $rand = rand (0, 4);
 
 get_header();?>
 <div class="container">
-<?php dynamic_sidebar('right-sidebar');
-get_sidebar();
-?>
+	<div class="row row-no-padding">
+        <div class="col-xs-12 col-sm-9">
 
-<div class="blog-content" id="content" role="main">
+<div class="blog-content" id="content" role="main" style="padding-top: 30px;">
 	<div class="padded-content">
 <div class="blogpostwrapper">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-<div class="blogpost" style="border-top: 7px solid <?php echo  $border_colours[$rand]; ?>">
+<div class="blogpost" style="border-top: 7px solid <?php echo  $border_colours[$rand]; ?>;">
 	<div class="post-nav">
 		<div><?php previous_post_link('&laquo; %link') ?></div>
 		<div><?php next_post_link('%link &raquo;') ?></div>
@@ -67,6 +66,13 @@ get_sidebar();
 </div><!-- blogpostwrapper -->
 </div><!-- padded-content -->
 </div><!-- blog-content -->
+</div><!-- col-xs-12 col-sm-9 -->
+
+<div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+	<?php dynamic_sidebar('right-sidebar');
+	get_sidebar(); ?>
+</div><!-- col-xs-12 col-sm-3 -->
+</div><!-- row -->
 </div><!-- container -->
 <?php get_footer(); ?>
 <?php } ?>

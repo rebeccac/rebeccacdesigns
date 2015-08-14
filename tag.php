@@ -18,9 +18,10 @@
      $query = new WP_Query( $query_args );
 get_header(); ?>
 		<div class="container">
-		<?php dynamic_sidebar('right-sidebar'); ?>
-		<?php get_sidebar(); ?>
-		<div class="blog-content">
+            <div class="row row-no-padding">
+                <div class="col-xs-12 col-sm-9">
+
+		<div class="blog-content" style="padding-top: 20px;">
 		    <div class="padded-content">
 		<!-- main content area -->
 		<div id="mainhome">
@@ -93,6 +94,11 @@ get_header(); ?>
 	<!-- end middle content area -->
 	</div>
 	</div><!-- padded-content, content  -->
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+            <?php dynamic_sidebar('right-sidebar');
+            get_sidebar(); ?>
+        </div><!-- col-xs-12 col-sm-3 -->
+    </div><!-- row -->
 	</div><!-- container -->
 
 <?php get_sidebar(); ?>
