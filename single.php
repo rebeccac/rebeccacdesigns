@@ -16,7 +16,7 @@ get_header();?>
 	<div class="row row-no-padding">
         <div class="col-xs-12 col-sm-9">
 
-<div class="blog-content" id="content" role="main" style="padding-top: 30px;">
+<div class="blog-content" id="content" role="main">
 	<div class="padded-content">
 <div class="blogpostwrapper">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -32,14 +32,20 @@ get_header();?>
 		<p class="bold"><?php the_author(); ?></p>
 		<!-- <div> -->
 		<?php the_content('<p>Read the rest of this entry &raquo;</p>'); ?>
-		<div class="col-xs-12 col-sm-6">
-			<?php echo do_shortcode('[ssba]'); ?>
+		<div class="row interact">
+			<!-- share icons - Simple Share Buttons Adder widget -->
+			<div class="col-xs-12 col-sm-6">
+				<?php echo do_shortcode('[ssba]'); ?>
+			</div>
+			<div class="col-xs-12 col-sm-6"><!-- You can follow responses to this post through the -->
+				<a href="http://www.rebeccacordingleydesigns.com/blog/feed/"><i class="fa fa-rss rss-icon"></i>RSS feed</a>
+
+			</div>
 		</div>
-		<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 		<div class="post-tags">
 		    <p><?php the_tags('<span class="bold">Tags:</span> ', ' | '); ?></p>
 		</div>
-
+		<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 		<p>
 		Posted
 		<?php /* This is commented, because it requires a little adjusting sometimes.
@@ -50,7 +56,7 @@ get_header();?>
 		<br>
 		Category: <?php the_category(', ') ?>.
 		<br>
-		You can follow responses to this post through the <?php post_comments_feed_link('RSS 2.0'); ?> feed.
+
 		<br>
 	</div>
 

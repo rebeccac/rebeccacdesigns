@@ -51,4 +51,14 @@ function new_excerpt_more( $more ) {
 	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( '(more...)', 'your-text-domain' ) . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+/*---Move Product Title*/
+// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_title', 5 );
+// add_action( 'woocommerce_before_single_product_summary', 'woocommerce_template_single_title', 5 );
+add_filter( 'woocommerce_product_tabs', 'sb_woo_remove_reviews_tab', 98);
+function sb_woo_remove_reviews_tab($tabs) {
+
+ unset($tabs['reviews']);
+
+ return $tabs;
+}
 ?>

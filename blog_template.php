@@ -1,13 +1,6 @@
-<?php /**
- * The Header template for our theme
- * Template Name: RCD Blog Index
- *
- * @package WordPress
- * @subpackage twentythirteen-child
- * @since twentythirteen-child 1.0
- */ ?>
+<?php /* Template Name: RCD Blog Index */ ?>
 <!-- Header -->
-<?php get_header(); ?>
+<?php include (TEMPLATEPATH . '/header.php'); ?>
 <!-- End Header -->
 
 <div class="container">
@@ -102,6 +95,5 @@
 </div><!-- row -->
 </div><!-- container -->
 <!-- Footer -->
-<?php get_header(); ?>
-
+<?php include (TEMPLATEPATH . '/footer.php'); ?>
 <!-- end footer area -->
