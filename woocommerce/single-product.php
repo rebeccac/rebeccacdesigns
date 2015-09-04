@@ -15,6 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header(); ?>
 <div class="container">
+	<div class="content">
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
@@ -48,5 +49,6 @@ get_header(); ?>
 		 */
 		/*do_action( 'woocommerce_sidebar' );*/
 	?>
+</div><!-- content -->
 </div><!-- container -->
 <?php get_footer(); ?>
