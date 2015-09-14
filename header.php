@@ -88,7 +88,7 @@
                             <li class="menu-item">Shop</li>
                             <li class="menu-item"><a href="/gallery">Gallery</a></li>
                             <li class="menu-item"><a href="/contact">Contact</a></li>
-                            <li class="menu-item">Web Development</li>
+                            <!-- <li class="menu-item">Web Development</li> -->
                         </ul>
                     </li>
                 </ul>
@@ -144,7 +144,7 @@
                     <li class="menu-item" role="menuitem"><a <?php echo $active_about ?> href="/about">ABOUT ME</a></li>
                     <li class="menu-item" role="menuitem"><a href="http://www.etsy.com/shop/rebeccacordingley" target="_blank">ETSY</a></li>
 					<li class="menu-item" role="menuitem"><a href="/shop">SHOP</a></li>
-					<li class="menu-item" role="menuitem"><a href="/blog">BLOG</a></li>
+
                     <!-- <li class="menu-item" role="menuitem">SHOP</li> -->
 
                     <!-- <li class="title">
@@ -158,10 +158,10 @@
 							<span class="title-top-bottom" style="background-color: #fdfdfd; color: #777;">DESIGNS</span>
 						</h1>
 					</li>
-
+					<li class="menu-item" role="menuitem"><a href="/blog">BLOG</a></li>
                     <li class="menu-item" role="menuitem"><a <?php echo $active_gallery ?> href="/gallery">GALLERY</a></li>
                     <li class="menu-item" role="menuitem"><a <?php echo $active_contact ?> href="/contact">CONTACT</a></li>
-                    <li class="menu-item" role="menuitem">WEB DEVELOPMENT</li>
+                    <!-- <li class="menu-item" role="menuitem">WEB DEVELOPMENT</li> -->
                 </ul>
             </div><!-- col-xs-12 -->
         </div><!-- row -->
