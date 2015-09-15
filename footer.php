@@ -16,7 +16,7 @@
 			<hr class="footer">
 			<div class="stay-in-touch">
 				<div class="row">
-					<div class="col-sm-10 col-sm-offset-1">
+					<div class="col-sm-12">
 						<div class="row">
 							<div class="col-sm-4">
 <p class="footer-heading">Subscribe to mailing list</p>
