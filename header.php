@@ -50,7 +50,7 @@
 <body>
 	<div class="container-fluid">
 		<header class="header">
-
+<!-- mobile menu visible < 768px -->
     <nav class="mobile visible-xs-block">
         <div class="row">
             <div class="col-xs-12">
@@ -99,6 +99,7 @@
     <!-- <div class="logo hidden-xs">
         <img src="/wp-content/uploads/2015/07/logo_small.png" width="40px" alt="Rebecca Cordingley Designs logo">
     </div> -->
+	<!-- desktop menu visible >= 768px -->
 
     <ul class="s-m-i hidden-xs">
         <li><a href="https://www.twitter.com/BecCDesigns" target="_blank">

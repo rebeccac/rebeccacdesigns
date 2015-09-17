@@ -18,7 +18,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<div class="row">
-							<div class="col-sm-4">
+							<div class=" col-xs-9 col-sm-4">
 <p class="footer-heading">Subscribe to mailing list</p>
 <!-- Begin MailChimp Signup Form -->
 <div class="input-group">
@@ -41,7 +41,7 @@
 <!--End mc_embed_signup-->
 
 	</div>
-			<div class="col-sm-4">
+			<div class=" hidden-xs col-sm-4">
 				<p class="footer-heading">Say hello</p>
 				<ul class="s-m-i-footer hidden-xs">
 			        <li><a href="https://www.twitter.com/BecCDesigns" target="_blank">
@@ -73,9 +73,9 @@
 			            </a>
 					</li>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-xs-3 col-sm-4">
 				<div class="footer-logo">
-					<img src="/wp-content/uploads/2015/07/logo_99.png" width="99px" alt="Rebecca Cordingley Designs logo">
+					<img src="/wp-content/uploads/2015/07/logo_99.png" alt="Rebecca Cordingley Designs logo">
 				</div>
 			</div>
 </div></div>
@@ -84,9 +84,9 @@
 	</div>
 	<div class="footer-links">
 		<div class="row">
-			<div class="col-sm-8 col-sm-offset-2">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2">
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-xs-4 col-sm-4">
 						<p class="footer-menu-heading">RCD</p>
 						<a href="/" class="footer-link">Home</a>
 						<br>
@@ -98,16 +98,16 @@
 						<br>
 						<a href="/contact" class="footer-link">Contact</a>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-xs-4 col-sm-4">
 						<p class="footer-menu-heading">Shop</p>
 						<a href="http://www.etsy.com/shop/rebeccacordingley" class="footer-link" target="_blank">Etsy Store</a>
 						<!-- <br>
 						<p class="footer-link-coming-soon">Shop - Coming Soon</p> -->
 						<br>
-						<a href="/webdevelopment" class="footer-link">Web Development</a>
+						<a href="/shop" class="footer-link">Shop</a>
 
 					</div>
-					<div class="col-sm-4">
+					<div class="col-xs-4 col-sm-4">
 						<p class="footer-menu-heading">Keep in touch</p>
 						<a href="http://www.twitter.com/BecCDesigns" class="footer-link" target="_blank">Twitter</a>
 						<br>

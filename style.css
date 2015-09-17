@@ -342,6 +342,7 @@ p.footer-menu-heading {
 .footer .footer-logo img {
     display: block;
     margin: 0 auto;
+    width: 100%;
 }
 .footer .copyright {
   font-family: 'Open Sans', sans-serif;
@@ -917,6 +918,33 @@ font-family: Verdana, sans-serif; }
 
 /* ********** About Me Page ********** */
 
+.thumbnails {
+    width: 100%;
+    height: auto;
+    padding: 0 20px 0 0;
+}
+.left-thumb {
+    float: left;
+}
+.right-thumb {
+    float: right;
+}
+.right-thumb,
+.left-thumb {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+}
+.right-thumb img,
+.left-thumb img {
+    width: 100%;
+    padding: 5px;
+}
+.top-photo {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+}
 .about-me-left-side {
     float: left;
     width: 34%;
@@ -925,6 +953,7 @@ font-family: Verdana, sans-serif; }
 .about-me-right-side {
     float: right;
     width: 66%;
+    text-align: justify;
 }
 .about-me-img {
     padding: 0 20px 10px 0;
@@ -940,7 +969,8 @@ h3.about-me-subheading {
     margin: 30px 0 10px 0;
     text-align: left;
 }
-p.first-paragraph {
+p.first-paragraph,
+p.info {
     color: #907f70;
     font-size: 1.3em;
 }
@@ -1225,6 +1255,7 @@ i.rss-icon {
     height: 35px;
     font-size: 2.2em; } }
 /* Extra Small Devices, Phones */
+
 @media only screen and (min-width: 480px) {
   .text-center-xs {
     text-align: center; }
@@ -1252,7 +1283,36 @@ i.rss-icon {
     border: 0; }
     .rc-overlay .rc-overlay-top a.rc-close span:link, .rc-overlay .rc-overlay-top a.rc-close span:hover, .rc-overlay .rc-overlay-top a.rc-close span:visited, .rc-overlay .rc-overlay-top a.rc-close span:active span {
       text-decoration: none;
-      color: rgba(242, 242, 235, 0.7); } }
+      color: rgba(242, 242, 235, 0.7); }
+
+   }
+   @media only screen and (max-width: 639px) {
+       .about-me-left-side {
+           display: none;
+       }
+       .about-me-right-side {
+           width: 100%;
+       }
+       .top-photo {
+           display: block;
+       }
+       .top-photo img {
+           width: 100%;
+           max-width: 639px;
+       }
+   }
+   @media only screen and (min-width: 640px) {
+   .top-photo {
+       display: none;
+   }
+}
+/* XS Devices */
+@media only screen and (max-width: 767px) {
+    header.header {
+        height: 40px;
+    }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   /* ********** Gallery ********** */
@@ -1291,15 +1351,20 @@ i.rss-icon {
     }
 
     header.header {
-        height: 90px;
+        /*height: 90px;*/
     }
 
     h3.about-me-subheading {
         font-size: 1.5em;
     }
+    h2.about-title {
+        font-size: 1.7em;
+    }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h2.about-title {
+        font-size: 2.1em;
+    }
     header.header nav.nav {
     }
       header.header nav.nav ul.menu {
