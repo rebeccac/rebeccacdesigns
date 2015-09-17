@@ -343,6 +343,7 @@ p.footer-menu-heading {
     display: block;
     margin: 0 auto;
     width: 100%;
+    max-width: 99px;
 }
 .footer .copyright {
   font-family: 'Open Sans', sans-serif;
@@ -579,6 +580,33 @@ header.header {
             line-height: 25px;
             padding: 0 10px;
         }
+/* ********** */
+        header.header nav.nav ul.menu ul {
+            display: none;
+            background: #5f6975;
+            border-radius: 0px;
+            padding: 0;
+    	    position: absolute;
+            top: 100%;
+        }
+        header.header nav.nav ul.menu li.menu-item:hover > ul {
+            display: block;
+            list-style: none;
+        }
+        header.header nav.nav ul.menu li.menu-item:hover > ul li {
+            width: auto;
+            min-width: 150px;
+            background-color: #907f70;
+        }
+        header.header nav.nav ul.menu li.menu-item:hover > ul li:not(:last-child) {
+            border-bottom: 1px solid #8f867f;
+        }
+        header.header nav.nav ul.menu li.menu-item:hover > ul li:hover {
+            background-color: #8f867f;
+        }
+
+/* ********** */
+
   header.header .logo {
     position: absolute;
     top: 15px;

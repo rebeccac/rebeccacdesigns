@@ -160,7 +160,12 @@
 						</h1>
 					</li>
 					<li class="menu-item" role="menuitem"><a href="/blog">BLOG</a></li>
-                    <li class="menu-item" role="menuitem"><a <?php echo $active_gallery ?> href="/gallery">GALLERY</a></li>
+                    <li class="menu-item" role="menuitem"><a <?php echo $active_gallery ?> href="/gallery">GALLERY</a>
+						<ul>
+							<li>Jewellery</li>
+							<li>Lampwork Glass</li>
+						</ul>
+					</li>
                     <li class="menu-item" role="menuitem"><a <?php echo $active_contact ?> href="/contact">CONTACT</a></li>
                     <!-- <li class="menu-item" role="menuitem">WEB DEVELOPMENT</li> -->
                 </ul>
