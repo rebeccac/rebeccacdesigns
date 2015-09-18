@@ -30,6 +30,15 @@ $trans_off_white: rgba(242,242,235,0.7);
   }
 }
 
+header.header nav.nav ul.menu li.menu-item:hover > ul li {
+    width: auto;
+    min-width: 150px;
+    background-color: #907f70;
+}
+
+header.header nav.nav ul.menu li.menu-item:hover > ul li:not(:last-child) {
+    border-bottom: 1px solid lighten(#907f70, 10%);
+}
 
 * {
 margin: 0;

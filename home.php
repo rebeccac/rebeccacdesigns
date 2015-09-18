@@ -66,7 +66,9 @@
     <div class="interact">
         <div class="row">
             <div class="col-xs-12 col-sm-6">
-                <i class="fa fa-comments-o"></i>Comment on this post
+                <a href="<?php the_permalink() ?>#more" class="more">
+                  <i class="fa fa-comments-o"></i>Comment on this post</a>
+
             </div>
             <div class="col-xs-12 col-sm-6">
                 <?php echo do_shortcode('[ssba]'); ?>

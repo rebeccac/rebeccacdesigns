@@ -1,7 +1,7 @@
 <?php
 /**
  * The Header template for our theme
- * Template Name: RCD Index 
+ * Template Name: RCD Index
 
  * Displays all of the <head> section and everything up till <div id="main">
  *

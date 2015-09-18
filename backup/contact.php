@@ -1,8 +1,8 @@
 <code>
 
 <div class="content">
-    <h2>Contact Me</h2>
-
+    <h2 class="page-title">CONTACT ME</h2>
+<div class="padded-content">
     <p><em>Please don't hestitate to contact me with any questions, comments or requests.</em></p>
 
     <div class="row">
@@ -14,7 +14,7 @@
         </div><!-- col-md-9 -->
         <div class=" col-xs-12 col-md-3">
             <div class="contact-icon col-xs-4 col-md-12 text-center-xs text-left-md">
-                <a href="http://www.twitter.com" target="_blank" class="no-decoration-link"><i class="fa fa-twitter"></i> <div class="hidden-xs inline-block"><span class="plain-text">Twitter</span></a></div>
+                <a href="https://www.twitter.com/BecCDesigns" target="_blank" class="no-decoration-link"><i class="fa fa-twitter"></i> <div class="hidden-xs inline-block"><span class="plain-text">Twitter</span></a></div>
             </div>
             <div class="contact-icon col-xs-4 col-md-12 text-center-xs text-left-md">
                 <a href="http://www.facebook.com" target="_blank" class="no-decoration-link"><i class="fa fa-facebook"></i> <div class="hidden-xs inline-block"><span class="plain-text">Facebook</span></a></div>
@@ -31,4 +31,5 @@
 
         </div><!-- col-xs-12 col-md-3 -->
     </div><!-- row -->
+</div><!-- padded-content -->
 </div><!-- content -->

@@ -1,8 +1,10 @@
 [insert_php] $images = galleryPhotos_function();
 
 [/insert_php]
+<code>
 <div class="content">
-<h2>Gallery</h2>
+<h2 class="page-title">GALLERY</h2>
+<div class="padded-content">
 <div class="gallery">
         <div class="row">
             <div class="col-md-12">
@@ -67,4 +69,5 @@ $i++;
             </div>
         </div>
     </div>
+</div><!-- padded-content -->
 </div><!-- content -->

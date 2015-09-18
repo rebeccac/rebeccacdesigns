@@ -14,9 +14,9 @@ $images = frontPageImages_function();
 $item = new Etsy();
 $listings = $item->getListings();
 $rand = $item->getRandomElement($listings);
-$info_500 = truncate_paragraph($about, 500, "/about", "red");
-$info_250 = truncate_paragraph($about, 250, "/about", "red");
-$description = truncate_paragraph($listings['results'][$rand]['description'], 300, $listings['results'][$rand]['url'], "dark_grey");
+$info_500 = truncate_paragraph($about, 500, "/about", "underlined");
+$info_250 = truncate_paragraph($about, 250, "/about", "underlined");
+$description = truncate_paragraph($listings['results'][$rand]['description'], 300, $listings['results'][$rand]['url'], "underlined");
 
 [/insert_php]
 
@@ -40,7 +40,7 @@ echo "</div>";
 <div class="frontpage-gallery hidden-xs">
 <div class="frontpage-hidden-xs-images">
   <div class="col-sm-12">
-     <img src="/wp-content/uploads/2015/08/banner1.png" class="img-full-width" alt="Rebecca Cordingley Designs banner" title="Photo by Simon Cordingley">
+     <img src="/wp-content/uploads/2015/08/banner.jpg" class="img-full-width" alt="Rebecca Cordingley Designs banner" title="Photo by Simon Cordingley">
   </div>
 </div>
 </div>
@@ -131,8 +131,8 @@ endif;
 <div class="card">
 <h2 class="front-page-subtitle">REBECCA CORDINGLEY DESIGNS ON ETSY</h2>
 
-<div class="widget-img">
-[insert_php] echo "<img src='".$listings['results'][$rand]['MainImage']['url_570xN']."' alt='".$listings['results'][$rand]['title']."'>";[/insert_php]
+<div class="widget-img"><a href="[insert_php]echo $listings['results'][$rand]['url'];[/insert_php]" target="_blank">
+[insert_php] echo "<img src='".$listings['results'][$rand]['MainImage']['url_570xN']."' alt='".$listings['results'][$rand]['title']."'>";[/insert_php]</a>
 </div>
 
 <div class="widget-description">
@@ -141,10 +141,10 @@ endif;
 
 <div class="widget-bottom-row">
 <div class="widget-bottom-row-left">
-  <h3 class="widget-view-more">VIEW MORE<br>ON ETSY</h3>
+  <a href="http://rebeccacordingley.etsy.com" target="_blank"><h3 class="widget-view-more">VIEW MORE ON ETSY</h3></a>
 </div>
 <div class="widget-bottom-row-right">
-  <h3 class="widget-price">USD$[insert_php]echo $listings['results'][$rand]['price'];[/insert_php]</h3>
+  <a href="[insert_php]echo $listings['results'][$rand]['url'];[/insert_php]" target="_blank"><h3 class="widget-price">AUD$[insert_php]echo $listings['results'][$rand]['price'];[/insert_php]</h3></a>
 </div>
 </div>
 
