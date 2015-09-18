@@ -597,6 +597,9 @@ header.header {
             min-width: 150px;
             background-color: #907f70;
         }
+        header.header nav.nav ul.menu li.menu-item:hover > ul li a {
+            color: #f2f2f2;
+        }
         header.header nav.nav ul.menu li.menu-item:hover > ul li:hover {
             background-color: #a6998d;
         }
@@ -613,10 +616,8 @@ header.header {
 
 
 /* **************************** */
+
 /* ********** Front page ********** */
-/*.images {
-  position: relative;
-  top: 30px; }*/
 
 .frontpage-hidden-xs-images {
   margin-top: 25px;
@@ -625,7 +626,6 @@ header.header {
 }
 
 .frontpage-image {
-  /*padding: 5px; */
   border: 1px solid #f3f3f3;
 }
 .frontpage-gallery {
@@ -633,7 +633,6 @@ header.header {
 }
 
 .left {
-  /*height: 220px;*/
   vertical-align: top; }
 
 .middle {
@@ -649,7 +648,6 @@ header.header {
 /* ********** Contact Page ********** */
 .box {
     width: 100%;
-    /*background-color: rgba(220,220,220,0.5);*/
     background-color: rgba(220,220,220, 0.4);
     height: auto;
     padding: 20px;
@@ -794,7 +792,8 @@ font-family: Verdana, sans-serif; }
 .rc-overlay .rc-overlay-box .rc-details h3.title {
   text-align: center;
   height: 50px;
-  font-size: 2.4em; }
+  font-size: 2.4em;
+color: #f2f2f2; }
 
 .rc-overlay .rc-overlay-box .rc-details span.gallery-description {
   display: block;
@@ -1053,7 +1052,6 @@ li.edit-image {
     padding-left: 20px;
     display: inline-block; }
     .card .widget-bottom-row .widget-bottom-row-left a h3.widget-view-more {
-      /*font-family: 'Lora', serif;*/
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       color: #555;
@@ -1066,7 +1064,6 @@ li.edit-image {
     text-align: right;
     padding-right: 20px; }
     .card .widget-bottom-row .widget-bottom-row-right h3.widget-price {
-      /*font-family: 'Lora', serif;*/
       font-family: 'Open Sans', sans-serif;
       font-weight: 400;
       color: #555;
@@ -1182,8 +1179,6 @@ p.post-details {
 }
 
 .sidebar-container {
-    /*float: right;*/
-    /*width: 25%;*/
     min-height: 100%;
 }
 .sidebar-img {

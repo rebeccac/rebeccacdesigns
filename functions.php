@@ -23,10 +23,16 @@ function frontPageImages_function() {
     $images = $wpdb->get_results("SELECT * FROM images ORDER BY images.id", OBJECT);
     return $images;
 }
-// get all records from photos table - gallery images
-function galleryPhotos_function() {
+// get all records from gallery_lampwork table - gallery images
+function galleryLampworkPhotos_function() {
     global $wpdb;
-    $photos = $wpdb->get_results("SELECT * FROM photos", OBJECT);
+    $photos = $wpdb->get_results("SELECT * FROM gallery_lampwork", OBJECT);
+    return $photos;
+}
+// get all records from gallery_jewellery table - gallery images
+function galleryJewelleryPhotos_function() {
+    global $wpdb;
+    $photos = $wpdb->get_results("SELECT * FROM gallery_jewellery", OBJECT);
     return $photos;
 }
 // Explanation in notes.txt

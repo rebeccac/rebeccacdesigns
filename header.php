@@ -166,8 +166,8 @@
 					<li class="menu-item" role="menuitem"><a href="/blog">BLOG</a></li>
                     <li class="menu-item" role="menuitem"><a <?php echo $active_gallery ?> href="/gallery">GALLERY</a>
 						<ul>
-							<li>Jewellery</li>
-							<li>Lampwork Glass</li>
+							<li role="menuitem"><a href="/gallery/jewellery">Jewellery</a></li>
+							<li role="menuitem"><a href="/gallery/lampwork">Lampwork Glass</a></li>
 						</ul>
 					</li>
                     <li class="menu-item" role="menuitem"><a <?php echo $active_contact ?> href="/contact">CONTACT</a></li>
