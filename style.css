@@ -513,6 +513,22 @@ header.header {
             height: 30px;
             line-height: 30px;
             border-bottom: 1px solid #bbb; }
+          header.header nav.mobile ul.mobile-menu li ul.drop li i {
+              font-size: 0.6em;
+              margin-left: -15px;
+              padding-right: 5px;
+          }
+
+          header.header nav.mobile ul.mobile-menu li ul.drop li ul {
+              display: none;
+              list-style: none;
+              width: 100%;
+              padding: 0;
+              margin: 0;
+              position: absolute;
+              left: 0;
+          }
+
             header.header nav.mobile ul.mobile-menu li ul.drop li:nth-child(1) {
               background-color: #ababab; }
             header.header nav.mobile ul.mobile-menu li ul.drop li:nth-child(2) {
@@ -534,6 +550,7 @@ header.header {
             border-bottom: 0; }
           header.header nav.mobile ul.mobile-menu li ul.drop li:hover {
             background-color: #4b747a; }
+
   header.header nav.nav {
     width: 100%;
     height: 40px;
@@ -805,10 +822,10 @@ color: #f2f2f2; }
   text-align: center;
   padding: 0; }
 
-.rc-overlay .rc-overlay-box .rc-details p {
+/*.rc-overlay .rc-overlay-box .rc-details p {
   font-size: 0.95em;
   text-align: left;
-  float: left; }
+  float: left; }*/
 
 .rc-overlay .rc-overlay-top a.rc-close span {
   z-index: 1001;

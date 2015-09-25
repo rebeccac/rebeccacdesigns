@@ -83,12 +83,16 @@
                         <ul class="drop" id="dropdown-menu">
                             <li class="menu-item"><a href="/">Home</a></li>
                             <li class="menu-item"><a href="/about">About Me</a></li>
+							<li class="menu-item"><a href="/contact">Contact</a></li>
 							<li class="menu-item"><a href="/blog">Blog</a></li>
                             <li class="menu-item"><a $class href="http://www.etsy.com" target="_blank">Etsy</a></li>
-                            <li class="menu-item">Shop</li>
-                            <li class="menu-item"><a href="/gallery">Gallery</a></li>
-                            <li class="menu-item"><a href="/contact">Contact</a></li>
-                            <!-- <li class="menu-item">Web Development</li> -->
+                            <li class="menu-item"><a href="/shop">Shop</a></li>
+                            <li class="menu-item"><a href="#" id="gallery-submenu"><i class="fa fa-plus"></i>Gallery</a>
+								<ul id="gallery-menu">
+									<li class="menu-item"><a href="/gallery/jewellery" >Jewellery</a></li>
+									<li class="menu-item"><a href="/gallery/lampwork">Lampwork</a></li>
+								</ul>
+							</li>
                         </ul>
                     </li>
                 </ul>
