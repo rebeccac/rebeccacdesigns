@@ -58,7 +58,7 @@
 			                <span class="sr-only">Instagram</span>
 			            </a>
 					</li>
-					<li><a href="http://www.facebook.com/elysiumbeads" target="_blank">
+					<li><a href="http://www.facebook.com/RebeccaCordingleyDesigns" target="_blank">
 			                <span aria-hidden="true">
 			                    <i class="fa fa-facebook footer-facebook"></i>
 			                </span>
@@ -111,7 +111,7 @@
 						<p class="footer-menu-heading">Keep in touch</p>
 						<a href="http://www.twitter.com/BecCDesigns" class="footer-link" target="_blank">Twitter</a>
 						<br>
-						<a href="http://www.facebook.com" class="footer-link" target="_blank">Facebook</a>
+						<a href="http://www.facebook.com/RebeccaCordingleyDesigns" class="footer-link" target="_blank">Facebook</a>
 						<br>
 						<a href="http://www.instagram.com/rebeccacdesigns" class="footer-link" target="_blank">Instagram</a>
 						<br>

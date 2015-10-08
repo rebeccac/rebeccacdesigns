@@ -13,8 +13,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header(); ?>
+get_header();
+ ?>
 <div class="container">
+	<p></p>
 	<div class="content">
 	<?php
 		/**
@@ -51,4 +53,5 @@ get_header(); ?>
 	?>
 </div><!-- content -->
 </div><!-- container -->
-<?php get_footer(); ?>
+<?php get_footer();
+wp_footer(); ?>

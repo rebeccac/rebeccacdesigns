@@ -48,6 +48,17 @@
 </head>
 
 <body>
+	<!-- Facebook Page Plugin -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- end Facebook Page Plugin -->
+
 	<div class="container-fluid">
 		<header class="header">
 <!-- mobile menu visible < 768px -->
@@ -67,7 +78,7 @@
                                 <span class="sr-only">Twitter</span>
 
                             </a></li>
-                            <li><a href="http://www.facebook.com" target="_blank"><span aria-hidden="true">
+                            <li><a href="http://www.facebook.com/RebeccaCordingleyDesigns" target="_blank"><span aria-hidden="true">
                                 <i class="fa fa-facebook"></i>
                             </span>
                             <span class="sr-only">Facebook</span></a></li>
@@ -117,7 +128,7 @@
                 <span class="sr-only">Twitter</span>
             </a>
 		</li>
-        <li><a href="http://www.facebook.com" target="_blank">
+        <li><a href="http://www.facebook.com/RebeccaCordingleyDesigns" target="_blank">
                 <span aria-hidden="true">
                     <i class="fa fa-facebook"></i>
                 </span>
@@ -154,19 +165,13 @@
                     <li class="menu-item" role="menuitem"><a href="http://www.etsy.com/shop/rebeccacordingley" target="_blank">ETSY</a></li>
 					<li class="menu-item" role="menuitem"><a href="/shop">SHOP</a></li>
 
-                    <!-- <li class="menu-item" role="menuitem">SHOP</li> -->
-
-                    <!-- <li class="title">
-                        <h1 class="title"><span style="font-size: 1.5em;">REBECCA CORDINGLEY</span><br>
-                            <span style="font-size: 1.1em;">DESIGNS</span></h1>
-                    </li> -->
-
 					<li class="title">
 						<h1 class="title">
 							<span class="title-top-bottom" style="background-color: #fdfdfd; color: #777;">REBECCA CORDINGLEY</span>
 							<span class="title-top-bottom" style="background-color: #fdfdfd; color: #777;">DESIGNS</span>
 						</h1>
 					</li>
+
 					<li class="menu-item" role="menuitem"><a href="/blog">BLOG</a></li>
                     <li class="menu-item" role="menuitem"><a <?php echo $active_gallery ?> href="/gallery">GALLERY</a>
 						<ul>
@@ -175,7 +180,6 @@
 						</ul>
 					</li>
                     <li class="menu-item" role="menuitem"><a <?php echo $active_contact ?> href="/contact">CONTACT</a></li>
-                    <!-- <li class="menu-item" role="menuitem">WEB DEVELOPMENT</li> -->
                 </ul>
             </div><!-- col-xs-12 -->
         </div><!-- row -->

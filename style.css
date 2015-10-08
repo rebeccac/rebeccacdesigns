@@ -1508,14 +1508,62 @@ i.rss-icon {
 h1.product-title {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    /*color: #666;*/
-    color: #4b747a;
+    color: #896c2e;
     font-size: 2em;
+    margin-top: 40px;
 }
-
+.entry-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 0 80px 0;
+}
 /* Shop front page - each product */
 .products .product {
+    min-height: 293px !important;
     display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    height: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.products .product a:link,
+.products .product a:hover,
+.products .product a:active,
+.products .product a:visited {
+    text-decoration: none;
+}
+.products .product a img {
+    /*padding: 0;*/
+}
+.products .product a h3 {
+    font-size: 1.4em;
+    color: #896c2e;
+    text-align: center;
+}
+
+.products .product a .price .amount {
+    font-size: 1.3em;
+    color: #777;
+    text-align: center;
+    display: block;
+}
+.products .product a.add_to_cart_button {
+    display: block;
+    background-color: #669999;
+    color: #f2f2eb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+    width: 110px;
+    height: 25px;
+    line-height: 25px;
+    border: 0;
+    position: relative;
+    top: -3px;
+    margin: 40px auto 0 auto;
 }
 
 .entry-content.twentythirteen .woocommerce-breadcrumb {
@@ -1578,7 +1626,11 @@ h1.product-title {
     font-weight: 400;
     color: #777;
 }
-
+form.cart {
+    height: 40px;
+    max-height: 40px;
+    margin-top: 30px;
+}
 .quantity,
 .quantity input[type="number"] {
     width: 50px;
@@ -1587,11 +1639,11 @@ h1.product-title {
     font-size: 1.1em;
     line-height: 40px;
     padding: 0 3px;
-    margin-top: 30px;
+    float: left;
 }
 .single_add_to_cart_button {
     display: inline-block;
-    background-color: #4b747a;
+    background-color: #669999;
     color: #f2f2eb;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
@@ -1603,8 +1655,11 @@ h1.product-title {
     border: 0;
     position: relative;
     top: -3px;
-    margin-left: 5px;
-    margin-top: 30px;
+    margin-left: 120px;
+    float: right;
+}
+.product_meta {
+    margin-top: 40px;
 }
 
 .woocommerce-tabs {
@@ -1641,10 +1696,24 @@ h1.product-title {
 }
 
 .woocommerce-tabs.wc-tabs-wrapper .panel.entry-content.wc-tab h2 {
-    color: #4b747a;
+    color: #896c2e;
 }
 .related.products h2 {
     color: #777;
     font-size: 1.5em;
 
+}
+
+
+/* Lightbox */
+
+/* Lightbox thumbnails (next, previous images) - height=50px, width=50px. From plugins/woocommerce/assets/css/prettyPhoto.css */
+.pp_gallery ul a {
+    /*border:1px solid #000;
+    border:1px solid; rgba(0,0,0,.5);
+    display:block;
+    float:left;*/
+    height:50px !important;
+    width:50px;
+    /*overflow:hidden;*/
 }
