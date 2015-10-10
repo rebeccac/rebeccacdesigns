@@ -55,9 +55,11 @@ get_header(); ?>
 			?>
 
 			<?php woocommerce_product_loop_start(); ?>
-
+				<h2 class="catalogue-subtitle">Categories</h2>
 				<?php woocommerce_product_subcategories(); ?>
-
+				<br>
+				<hr>
+				<h2 class="catalogue-subtitle">Products</h2>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php wc_get_template_part( 'content', 'product' ); ?>

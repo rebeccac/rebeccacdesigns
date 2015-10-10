@@ -14,6 +14,7 @@
 // $active_about = addActive('about', $page);
 // $active_contact = addActive('contact', $page);
 // $active_gallery = addActive('gallery', $page);
+global $woocommerce;
 
 ?><!DOCTYPE html>
 <!--[if IE 7]>
@@ -120,7 +121,14 @@
 		</li>
 	</ul>
     <ul class="s-m-i hidden-xs">
-
+		<li class="separator">
+			<a href="/basket">
+				<span aria-hidden="true">
+					<i class="fa fa-shopping-cart"></i>
+				</span>
+				<span class="sr-only">Shopping Cart</span>
+			</a>
+		</li>
         <li><a href="https://www.twitter.com/BecCDesigns" target="_blank">
                 <span aria-hidden="true">
                     <i class="fa fa-twitter"></i>

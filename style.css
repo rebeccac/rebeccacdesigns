@@ -457,6 +457,11 @@ header.header {
     header.header ul.s-m-i li {
       display: inline-block;
       padding: 0 8px; }
+      header.header ul.s-m-i li.separator {
+          margin-right: 15px;
+          padding-right: 25px;
+          border-right: 1px solid #ccc;
+      }
       header.header ul.s-m-i li i {
         color: #828282;
         font-size: 1.5em; }
@@ -1482,14 +1487,6 @@ i.rss-icon {
         width: 100%;
         padding-left: 20px;
         display: block; }
-        /*.card .widget-bottom-row .widget-bottom-row-left h3.widget-view-more {
-          /*font-family: 'Lora', serif;*/
-          /*font-family: 'Open Sans', sans-serif;
-          font-weight: 400;
-          color: #555;
-          display: inline-block;
-          font-size: 1.3em;
-          text-align: center; }*/
       .card .widget-bottom-row .widget-bottom-row-right {
         width: 100%;
         display: block;
@@ -1512,20 +1509,39 @@ h1.product-title {
     font-size: 2em;
     margin-top: 40px;
 }
+h2.catalogue-subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #555;
+    font-size: 1.6em;
+}
 .entry-content {
     width: 100%;
     max-width: 100%;
     padding: 40px 0 80px 0;
+}
+.entry-content h1.page-title {
+    /*color: #896c2e;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    color: #666;
+    font-weight: 200;
+    /*padding: 0 10px;*/
+}
+
+form.woocommerce-ordering {
+    float: right;
 }
 /* Shop front page - each product */
 .products .product {
     min-height: 293px !important;
     display: inline-block;
     vertical-align: top;
-    width: 30%;
+    width: 25%;
     height: auto;
     text-align: center;
-    padding: 20px 0;
+    padding: 0;
+    border: 1px solid #ddd;
 }
 
 .products .product a:link,
@@ -1534,36 +1550,45 @@ h1.product-title {
 .products .product a:visited {
     text-decoration: none;
 }
+.products .product a {
+    width: 100%;
+    text-align: center;
+}
 .products .product a img {
-    /*padding: 0;*/
+    /*width: 98%;
+    height: 98%;*/
+    width: 100%;
+    height: 100%;
 }
 .products .product a h3 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #896c2e;
     text-align: center;
 }
-
+.products .product a h3 .count {
+    color: #777;
+    font-size: 1em;
+    background: none;
+}
 .products .product a .price .amount {
-    font-size: 1.3em;
+    font-size: 1.15em;
     color: #777;
     text-align: center;
     display: block;
 }
 .products .product a.add_to_cart_button {
     display: block;
-    background-color: #669999;
-    color: #f2f2eb;
+    background-color: #b2b2b2;
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     font-weight: 400;
     text-align: center;
-    width: 110px;
-    height: 25px;
-    line-height: 25px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
     border: 0;
-    position: relative;
-    top: -3px;
-    margin: 40px auto 0 auto;
+    margin: 10px auto 0 auto;
 }
 
 .entry-content.twentythirteen .woocommerce-breadcrumb {
@@ -1603,13 +1628,86 @@ h1.product-title {
     margin: 0 0 50px 0;
     border: 0;
     float: left;
+    text-align: center;
+}
+.images a.woocommerce-main-image {
+    /*text-align: center;
+    width: 100%;*/
 }
 .images .thumbnails a {
     padding: 5px;
     margin-top: 5px;
 }
+@media only screen and (min-width: 825px) and (max-width: 1024px) {
+    .entry-content {
+        padding: 30px 20px;
+    }
+    .images,
+    .summary {
+        display: block;
+        width: 100%;
+    }
+
+    .images a {
+        display: inline-block;
+        width: 48%;
+        float: left;
+        text-align: right;
+    }
+    .images .thumbnails {
+        display: inline-block;
+        width: 48% !important;
+        float: right;
+        padding-top: 10px;
+    }
+    .images .thumbnails a {
+        text-align: left;
+
+    }
+}
+
+@media only screen and (max-width: 824px) {
+    ul.products .product {
+        width: 49%;
+    }
+
+    .entry-content {
+        padding: 30px 20px;
+    }
+    .images,
+    .summary {
+        display: block;
+        width: 100%;
+    }
+
+    .images {
+        margin: 0 0 10px 0;
+    }
+    .images a {
+        display: block;
+        text-align: center;
+    }
+    .images .thumbnails.columns-3 {
+        display: block;
+        width: 100% !important;
+        padding-top: 10px;
+        text-align: center;
+    }
+    /* additional photos on product page - thumbnail container size */
+    .images .thumbnails.columns-3 a {
+        display: inline-block;
+        width: 100px;
+    }
+    .images .thumbnails.columns-3 a img {
+        width: 90px;
+        height: 90px;
+    }
+    h1.product-title {
+        margin-top: 10px;
+    }
+
+}
 .summary {
-    /*background-color: blue;*/
 }
 
 .summary .sku_wrapper {
@@ -1654,9 +1752,7 @@ form.cart {
     line-height: 40px;
     border: 0;
     position: relative;
-    top: -3px;
-    margin-left: 120px;
-    float: right;
+    margin-left: 80px;
 }
 .product_meta {
     margin-top: 40px;
@@ -1681,7 +1777,6 @@ form.cart {
     background-color: #eee;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
@@ -1693,6 +1788,7 @@ form.cart {
 }
 .woocommerce-tabs.wc-tabs-wrapper .panel.entry-content.wc-tab {
     background-color: transparent;
+    padding: 0;
 }
 
 .woocommerce-tabs.wc-tabs-wrapper .panel.entry-content.wc-tab h2 {
@@ -1702,6 +1798,13 @@ form.cart {
     color: #777;
     font-size: 1.5em;
 
+}
+
+.attachment-shop_single {
+    margin: 20px 0;
+}
+.thumbnails a {
+    padding: 0 10px;
 }
 
 
@@ -1716,4 +1819,43 @@ form.cart {
     height:50px !important;
     width:50px;
     /*overflow:hidden;*/
+}
+
+/* Checkout page */
+.woocommerce-info {
+    border-top-color: #896c2e !important;
+}
+
+.woocommerce-billing-fields h3,
+.woocommerce-shipping-fields h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    color: #666;
+    font-weight: 200;
+}
+.woocommerce-shipping-fields h3 label {
+    font-weight: 500;
+}
+
+.woocommerce-billing-fields label,
+.woocommerce-shipping-fields label {
+    color: #896c2e;
+    font-weight: 400;
+}
+
+.woocommerce-checkout-payment .form-row input[type="submit"],
+.woocommerce-checkout-payment .form-row input[type="submit"]:hover {
+    background-color: #669999;
+    color: #f2f2eb;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-align: center;
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-right: 30px;
 }
