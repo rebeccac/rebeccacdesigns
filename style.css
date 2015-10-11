@@ -1708,6 +1708,7 @@ form.woocommerce-ordering {
 
 }
 .summary {
+    text-align: left;
 }
 
 .summary .sku_wrapper {
@@ -1724,6 +1725,29 @@ form.woocommerce-ordering {
     font-weight: 400;
     color: #777;
 }
+
+.summary form.variations_form.cart table.variations tbody tr td.label label {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #777;
+    text-align: left;
+}
+
+.summary form.variations_form.cart table.variations tbody tr td.value select.attribute_pa_size {
+    width: 40px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #777;
+    font-weight: 400;
+    font-size: 1.3em;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+}
+/* don't show 'clear selection' link next to ring size select box */
+.reset_variations {
+display: none !important;
+}
+
 form.cart {
     height: 40px;
     max-height: 40px;
