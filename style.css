@@ -1726,32 +1726,91 @@ form.woocommerce-ordering {
     color: #777;
 }
 
+/* ********** Ring size form ********** */
+.summary form.variations_form {
+    margin-top: 5px;
+}
 .summary form.variations_form.cart table.variations tbody tr td.label label {
     font-size: 1.3em;
     font-weight: 600;
     color: #777;
     text-align: left;
+    /*margin: 15px 0;*/
 }
 
-.summary form.variations_form.cart table.variations tbody tr td.value select.attribute_pa_size {
-    width: 40px;
-    height: 30px;
-    font-family: 'Open Sans', sans-serif;
-    color: #777;
-    font-weight: 400;
-    font-size: 1.3em;
-    border: 1px solid #ccc;
-    border-radius: 0px;
+.summary form.variations_form.cart table.variations tbody tr td.value .select {
+  font-size: 13px;
+  position: relative;
+  display: inline-block;
 }
+
+.summary form.variations_form.cart table.variations tbody tr td.value .select select {
+    outline: none;
+    -webkit-appearance: none;
+    display: block;
+    padding: 5px;
+    margin: 0;
+    width: 70px;
+
+    transition: border-color 0.2s;
+    border: 2px solid #ccc;
+    border-radius: 0;
+
+    background: #fff;
+    color: #555;
+    line-height: normal;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.summary form.variations_form.cart table.variations tbody tr td.value .select .arr {
+  background: #fff;
+  bottom: 5px;
+  position: absolute;
+  right: 7px;
+  top: 6px;
+  width: 8px;
+  pointer-events: none;
+}
+.summary form.variations_form.cart table.variations tbody tr td.value .select .arr:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 8px solid #ccc;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+
+.summary form.variations_form.cart table.variations tbody tr td.value .select .arr:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 6px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
 /* don't show 'clear selection' link next to ring size select box */
 .reset_variations {
-display: none !important;
+    display: none !important;
 }
+
+/* ********** End of ring size form ********** */
 
 form.cart {
     height: 40px;
     max-height: 40px;
     margin-top: 30px;
+}
+.single_variation_wrap .variations_button {
+    margin-top: 20px;
 }
 .quantity,
 .quantity input[type="number"] {
@@ -1778,8 +1837,9 @@ form.cart {
     position: relative;
     margin-left: 80px;
 }
+/* Categories */
 .product_meta {
-    margin-top: 40px;
+    margin-top: 65px;
 }
 
 .woocommerce-tabs {
