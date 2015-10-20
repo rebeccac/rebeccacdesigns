@@ -69,4 +69,6 @@ function sb_woo_remove_reviews_tab($tabs) {
 }
 // remove default sorting dropdown
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
+
+// remove_action( 'woo_main_after', 'woocommerce_get_sidebar', 10);
 ?>
