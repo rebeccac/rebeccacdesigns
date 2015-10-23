@@ -1533,6 +1533,9 @@ form.woocommerce-ordering {
     float: right;
 }
 /* Shop front page - each product */
+.products {
+    /*white-space: nowrap;*/
+}
 .products .product {
     min-height: 293px !important;
     display: inline-block;
@@ -1542,6 +1545,7 @@ form.woocommerce-ordering {
     text-align: center;
     padding: 0;
     border: 1px solid #ddd;
+    position: relative;
 }
 
 .products .product a:link,
@@ -1555,8 +1559,6 @@ form.woocommerce-ordering {
     text-align: center;
 }
 .products .product a img {
-    /*width: 98%;
-    height: 98%;*/
     width: 100%;
     height: 100%;
 }
@@ -1589,6 +1591,8 @@ form.woocommerce-ordering {
     line-height: 30px;
     border: 0;
     margin: 10px auto 0 auto;
+    position: absolute;
+    bottom: 0;
 }
 
 .entry-content.twentythirteen .woocommerce-breadcrumb {
@@ -1667,7 +1671,15 @@ form.woocommerce-ordering {
 }
 
 @media only screen and (max-width: 824px) {
-    ul.products .product {
+
+    .product .related.products ul.products,
+    ul.products  {
+        width: 90%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .product .related.products ul.products li.product,
+    ul.products li.product {
         width: 49%;
     }
 
@@ -1837,11 +1849,28 @@ form.cart {
     position: relative;
     margin-left: 80px;
 }
-/* Categories */
+/* Product meta - categories, tags */
 .product_meta {
     margin-top: 65px;
 }
 
+.product_meta .tagged_as {
+    display: block;
+    width: 300px;
+    border: 1px solid #d2d2d2;
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #777;
+}
+.product_meta .tagged_as a {
+    font-weight: 400;
+}
+
+/* End of product meta - categories, tags */
+
+/* ********** Tabs ********** */
 .woocommerce-tabs {
     display: block;
     clear: both;
@@ -1878,6 +1907,9 @@ form.cart {
 .woocommerce-tabs.wc-tabs-wrapper .panel.entry-content.wc-tab h2 {
     color: #896c2e;
 }
+/* ********** End of Tabs ********** */
+
+
 .related.products h2 {
     color: #777;
     font-size: 1.5em;
