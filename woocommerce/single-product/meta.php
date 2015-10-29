@@ -17,6 +17,7 @@ $cat_count = sizeof( get_the_terms( $post->ID, 'product_cat' ) );
 $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
 
 ?>
+<div class="clear"></div>
 <div class="product_meta">
 
 	<?php do_action( 'woocommerce_product_meta_start' ); ?>

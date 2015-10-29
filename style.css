@@ -1537,15 +1537,16 @@ form.woocommerce-ordering {
     /*white-space: nowrap;*/
 }
 .products .product {
-    min-height: 293px !important;
+    min-height: 393px;
     display: inline-block;
     vertical-align: top;
-    width: 25%;
+    width: 24.5%;
     height: auto;
     text-align: center;
     padding: 0;
     border: 1px solid #ddd;
     position: relative;
+    margin-bottom: 7px;
 }
 
 .products .product a:link,
@@ -1576,7 +1577,8 @@ form.woocommerce-ordering {
     font-size: 1.15em;
     color: #777;
     text-align: center;
-    display: block;
+    padding: 0 2px;
+    display: inline-block;
 }
 .products .product a.add_to_cart_button {
     display: block;
@@ -1739,30 +1741,39 @@ form.woocommerce-ordering {
 }
 
 /* ********** Ring size form ********** */
-.summary form.variations_form {
-    margin-top: 5px;
-}
-.summary form.variations_form.cart table.variations tbody tr td.label label {
-    font-size: 1.3em;
-    font-weight: 600;
-    color: #777;
-    text-align: left;
-    /*margin: 15px 0;*/
+.summary .variations {
+    display: block;
+    clear: both;
 }
 
-.summary form.variations_form.cart table.variations tbody tr td.value .select {
+.summary .variations form.variations_form {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 20px;
+    clear: both;
+}
+.summary .variations form.variations_form.cart table.variations tbody tr td.label label {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #896c2e;
+    text-align: left;
+    padding-top: 9px;
+}
+
+.summary .variations form.variations_form.cart table.variations tbody tr td.value .select {
   font-size: 13px;
   position: relative;
   display: inline-block;
+  margin-bottom: 15px;
 }
 
-.summary form.variations_form.cart table.variations tbody tr td.value .select select {
+.summary .variations form.variations_form.cart table.variations tbody tr td.value .select select {
     outline: none;
     -webkit-appearance: none;
     display: block;
     padding: 5px;
     margin: 0;
-    width: 70px;
+    width: 140px;
 
     transition: border-color 0.2s;
     border: 2px solid #ccc;
@@ -1776,7 +1787,7 @@ form.woocommerce-ordering {
     line-height: inherit;
 }
 
-.summary form.variations_form.cart table.variations tbody tr td.value .select .arr {
+.summary .variations form.variations_form.cart table.variations tbody tr td.value .select .arr {
   background: #fff;
   bottom: 5px;
   position: absolute;
@@ -1785,7 +1796,7 @@ form.woocommerce-ordering {
   width: 8px;
   pointer-events: none;
 }
-.summary form.variations_form.cart table.variations tbody tr td.value .select .arr:before {
+.summary .variations form.variations_form.cart table.variations tbody tr td.value .select .arr:before {
   content: '';
   position: absolute;
   top: 50%;
@@ -1795,18 +1806,6 @@ form.woocommerce-ordering {
   border-top: 8px solid #ccc;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-}
-
-.summary form.variations_form.cart table.variations tbody tr td.value .select .arr:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 28px;
-  margin-top: -5px;
-  pointer-events: none;
-  border-top: 6px solid #fff;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
 }
 
 /* don't show 'clear selection' link next to ring size select box */
@@ -1851,7 +1850,7 @@ form.cart {
 }
 /* Product meta - categories, tags */
 .product_meta {
-    margin-top: 65px;
+    margin-top: 40px;
 }
 
 .product_meta .tagged_as {
@@ -1928,13 +1927,13 @@ form.cart {
 
 /* Lightbox thumbnails (next, previous images) - height=50px, width=50px. From plugins/woocommerce/assets/css/prettyPhoto.css */
 .pp_gallery ul a {
-    /*border:1px solid #000;
-    border:1px solid; rgba(0,0,0,.5);
-    display:block;
-    float:left;*/
     height:50px !important;
     width:50px;
-    /*overflow:hidden;*/
+}
+.pp_woocommerce .ppt {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.7em;
+    font-weight: 200;
 }
 
 /* Checkout page */
