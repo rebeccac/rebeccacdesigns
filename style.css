@@ -1528,7 +1528,10 @@ h2.catalogue-subtitle {
     font-weight: 200;
     /*padding: 0 10px;*/
 }
-
+.woocommerce {
+    position: absolute;
+    top: 120px;
+}
 form.woocommerce-ordering {
     float: right;
 }
@@ -1973,4 +1976,23 @@ form.cart {
     border-radius: 0;
     padding: 0;
     margin-right: 30px;
+}
+
+nav.woocommerce-pagination ul.page-numbers {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+}
+nav.woocommerce-pagination ul.page-numbers li {
+    display: inline-block;
+    min-width: 40px;
+    width: auto;
+    padding: 0 6px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    margin: 1px;
+
 }
