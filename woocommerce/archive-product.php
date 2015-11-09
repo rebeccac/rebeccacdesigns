@@ -54,12 +54,17 @@ get_header(); ?>
 				do_action( 'woocommerce_before_shop_loop' );
 			?>
 
-			<?php woocommerce_product_loop_start(); ?>
-				<h2 class="catalogue-subtitle">Categories</h2>
-				<?php woocommerce_product_subcategories(); ?>
+			<?php woocommerce_product_loop_start();
+				if (!is_product_category()) { ?>
+					<h2 class="catalogue-subtitle">Categories</h2>
+					<?php woocommerce_product_subcategories(); ?>
 				<br>
 				<hr>
+
 				<h2 class="catalogue-subtitle">Products</h2>
+				<?php } else { ?>
+					<br><br>
+				<?php } ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<?php wc_get_template_part( 'content', 'product' ); ?>

@@ -418,7 +418,7 @@ header.header {
   z-index: 1000;
   position: fixed;
   top: 0;
-  z-index: 500;
+  z-index: 1000;
   background-color: #fdfdfd;
 
   /* dropdown menu for phones */
@@ -1995,4 +1995,15 @@ nav.woocommerce-pagination ul.page-numbers li {
     border-radius: 7px;
     margin: 1px;
 
+}
+
+form.basket {
+    width: 100%;
+}
+
+.woocommerce {
+    width: 100%;
+    position: relative;
+    z-index: 998;
+    margin-bottom: 200px;
 }

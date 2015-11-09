@@ -67,8 +67,15 @@ function sb_woo_remove_reviews_tab($tabs) {
 
  return $tabs;
 }
+// change woocommerce breadcrumb home URL
+add_filter( 'woocommerce_breadcrumb_home_url', 'woo_custom_breadrumb_home_url' );
+function woo_custom_breadrumb_home_url() {
+    return 'http://www.rebeccacordingleydesigns.com/shop';
+}
 // remove default sorting dropdown
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 
 // remove_action( 'woo_main_after', 'woocommerce_get_sidebar', 10);
+// Display 24 products per page. Goes in functions.php
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
 ?>
