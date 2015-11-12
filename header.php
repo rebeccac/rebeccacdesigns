@@ -72,7 +72,15 @@ global $woocommerce;
 
                         <i class="fa fa-bars"></i>                             <span>Menu</span></a>
                         <ul class="s-m-i s-m-i-xs">
-                            <li><a href="https://www.twitter.com/BecCDesigns" target="_blank">
+							<li>
+								<a href="/basket">
+									<span aria-hidden="true">
+										<i class="fa fa-shopping-cart"></i>
+									</span>
+									<span class="sr-only">Shopping Cart</span>
+								</a>
+							</li>
+							<li><a href="https://www.twitter.com/BecCDesigns" target="_blank">
                                 <span aria-hidden="true">
                                     <i class="fa fa-twitter"></i>
                                 </span>
@@ -99,11 +107,14 @@ global $woocommerce;
 							<li class="menu-item"><a href="/blog">Blog</a></li>
                             <li class="menu-item"><a $class href="http://www.etsy.com" target="_blank">Etsy</a></li>
                             <li class="menu-item"><a href="/shop">Shop</a></li>
-                            <li class="menu-item"><a href="#" id="gallery-submenu"><i class="fa fa-plus"></i>Gallery</a>
+                            <li class="menu-item"><a href="#" id="gallery-submenu"><i class="fa fa-plus subcategory"></i>Gallery</a>
 								<ul id="gallery-menu">
 									<li class="menu-item"><a href="/gallery/jewellery" >Jewellery</a></li>
 									<li class="menu-item"><a href="/gallery/lampwork">Lampwork</a></li>
 								</ul>
+							</li>
+							<li class="menu-item">
+								<?php include('searchform.php'); ?>
 							</li>
                         </ul>
                     </li>
@@ -112,9 +123,6 @@ global $woocommerce;
         </div>
     </nav>
 
-    <!-- <div class="logo hidden-xs">
-        <img src="/wp-content/uploads/2015/07/logo_small.png" width="40px" alt="Rebecca Cordingley Designs logo">
-    </div> -->
 	<!-- desktop menu visible >= 768px -->
 	<ul class="header-search-box">
 		<li class="searchform"><?php include('searchform.php'); ?>

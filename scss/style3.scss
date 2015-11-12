@@ -23,7 +23,7 @@ $trans_off_white: rgba(242,242,235,0.7);
 }
 
 @mixin gradient {
-  @for $i from 1 through 7 {
+  @for $i from 1 through 8 {
     &:nth-child(#{$i}) {
       background-color: darken(#b0b0b0, $i * 2%);
     }

@@ -14,6 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 wc_print_notices();
 
 do_action( 'woocommerce_before_cart' ); ?>
+<h2 class="page-title">SHOPPING CART</h2>
 <form action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" method="post" class="basket">
 
 <?php do_action( 'woocommerce_before_cart_table' ); ?>
