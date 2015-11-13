@@ -78,4 +78,15 @@ remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 3
 // remove_action( 'woo_main_after', 'woocommerce_get_sidebar', 10);
 // Display 24 products per page. Goes in functions.php
 add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
-?>
+
+// remove coupons link from checkout page
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+
+// make phone number optional (checkout)
+add_filter( 'woocommerce_billing_fields', 'wc_npr_filter_phone', 10, 1 );
+
+function wc_npr_filter_phone( $address_fields ) {
+	$address_fields['billing_phone']['required'] = false;
+	return $address_fields;
+}
+ ?>

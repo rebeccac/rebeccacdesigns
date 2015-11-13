@@ -1991,10 +1991,25 @@ form.basket .shop_table.cart .cart_item .product-name a:visited {
   font-weight: 600;
   background-color: transparent; }
 
+.cart-collaterals .cart_totals {
+  margin-left: 20px; }
+
+.cart-collaterals .cart_totals table {
+  width: 100%; }
+  .cart-collaterals .cart_totals table tbody tr {
+    width: 25%; }
+    .cart-collaterals .cart_totals table tbody tr tbody tr th {
+      width: 30%; }
+    .cart-collaterals .cart_totals table tbody tr tbody tr td {
+      width: 70%; }
+
 .cart-collaterals .cart_totals .wc-proceed-to-checkout {
   line-height: 40px; }
 
-.cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button {
+.cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button:link,
+.cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button:hover,
+.cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button:active,
+.cart-collaterals .cart_totals .wc-proceed-to-checkout .checkout-button:visited {
   width: 200px;
   display: inline-block;
   background-color: #669999;

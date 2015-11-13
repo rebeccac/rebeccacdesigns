@@ -44,7 +44,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<tr class="shipping">
 				<th><?php _e( 'Shipping', 'woocommerce' ); ?></th>
-				<td><?php woocommerce_shipping_calculator(); ?></td>
+				<td> <?php woocommerce_shipping_calculator(); ?></td>
 			</tr>
 
 		<?php endif; ?>
