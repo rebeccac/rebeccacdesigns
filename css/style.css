@@ -2031,6 +2031,11 @@ form.basket .shop_table.cart th {
   z-index: 998;
   margin-bottom: 200px; }
 
+ul.order_details,
+address,
+table.shop_table {
+  color: #555; }
+
 /* XS Devices */
 @media only screen and (max-width: 767px) {
   header.header {
