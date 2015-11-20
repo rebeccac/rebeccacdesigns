@@ -67,6 +67,20 @@ function sb_woo_remove_reviews_tab($tabs) {
 
  return $tabs;
 }
+/**
+ * Change the Shop archive page title.
+ * @param  string $title
+ * @return string
+ */
+// function wc_custom_shop_archive_title( $title ) {
+//     if ( is_shop() ) {
+//         return str_replace( __( 'Products', 'woocommerce' ), 'My title', $title );
+//     }
+//
+//     return $title;
+// }
+// add_filter( 'wp_title', 'wc_custom_shop_archive_title' );
+
 // change woocommerce breadcrumb home URL
 add_filter( 'woocommerce_breadcrumb_home_url', 'woo_custom_breadrumb_home_url' );
 function woo_custom_breadrumb_home_url() {
@@ -88,5 +102,15 @@ add_filter( 'woocommerce_billing_fields', 'wc_npr_filter_phone', 10, 1 );
 function wc_npr_filter_phone( $address_fields ) {
 	$address_fields['billing_phone']['required'] = false;
 	return $address_fields;
+}
+
+// Change page title for Shop Archive page
+add_filter( 'wp_title', 'title_for_shop' );
+function title_for_shop( $title )
+{
+  if ( is_shop() ) {
+    return __( 'Shop | ' );
+  }
+  return $title;
 }
  ?>
